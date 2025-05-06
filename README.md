@@ -1,3 +1,1 @@
 ## Chain Smoker
-
-### Cool project
