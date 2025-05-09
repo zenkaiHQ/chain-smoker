@@ -35,7 +35,7 @@ export function generateGoogleLoginUrl(
   console.log("randomness", randomness);
   console.log("publicKey", publicKey);
   const nonce = generateNonce(publicKey, maxEpoch, randomness);
-  return `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=openid%20email&nonce=${nonce}`;
+  return `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}&scope=openid%20email&nonce=${nonce}`;
 }
 
 export async function signZkLoginTransaction({
